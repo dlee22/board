@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html ng-app="myBoardApp" >
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Board</title>
+
+    <link rel="stylesheet" href="boardStylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+
+    <!-- board 관련 module -->
+    <script src="boardRoutings/routings.js"></script>
+    <script src="boardGlobalService/globalService.js"></script>
+    <script src="boardController/pagination.js"></script>
+    <script src="boardController/boardController.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <h2><span class="label label-primary">Board</span></h2>
+
+    <div ng-view></div>
+</div>
+
+</body>
+</html>
+

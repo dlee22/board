@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+var app = require('../app');
+require("console-stamp")(console, "HH:MM:ss.l", '[' + process.pid + ']');
+
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), function() {
+  console.log(__filename +" #### Express server listening on port " + server.address().port+"......");
+});
